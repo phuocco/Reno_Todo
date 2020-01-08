@@ -52,6 +52,7 @@ class TaskScreen extends StatelessWidget {
                             return TaskTile(
                               taskTitle: taskData.tasks[index].name,
                               isChecked: taskData.tasks[index].isDone,
+                              baline: false,
                               checkboxCallback: (bool checkboxState) {
                                 taskData.updateTask(taskData.tasks[index]);
                               },
